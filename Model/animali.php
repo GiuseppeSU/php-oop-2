@@ -1,21 +1,18 @@
 <?php
 
-class animali
+class Animale
 {
-    public $name;
+
+}
 
 
+class Cane
+{
+
+}
 
 
+class Gatto
+{
 
-    public function __construct($name)
-    {
-        $this->name = $name;
-
-
-    }
-    public function getName()
-    {
-        return $this->name;
-    }
 }

@@ -1,8 +1,36 @@
 <?php
-class prodotti
+class Prodotti
 {
+
+    public $categoria;
     public $image;
-    public $name;
     public $prezzo;
-    public $icona;
+    public $descrizione;
+
+}
+
+
+class Cuccia extends Prodotti
+{
+    public $altezza;
+    public $lunghezza;
+
+}
+
+
+
+class Gioco extends Prodotti
+{
+
+    public $tipo;
+
+
+
+}
+
+class Cibo extends Prodotti
+{
+    public $tipo;
+    public $peso;
+
 }
