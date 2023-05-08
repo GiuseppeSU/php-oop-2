@@ -20,9 +20,20 @@ $cucce = [
 ];
 
 
-$wheigth = new Animal();
-$wheigth->setWeight(20 . 'Kg');
-echo $wheigth->getWeight();
+$giraffa = new Animal('Giraffa');
+$giraffa->setWeight(100 . 'Kg');
+echo $giraffa->getWeight();
+
+$cavallo = new Animal('Cavallo');
+$cavallo->setWeight(200 . 'Kg');
+echo $cavallo->getWeight();
+
+try {
+    echo $cavallo->setWeight('ciao');
+} catch (Exception $e) {
+    var_dump($e);
+    echo "Si è verificato un errore: " . $e->getMessage();
+}
 
 ?>
 <!DOCTYPE html>

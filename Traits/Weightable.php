@@ -14,6 +14,6 @@ trait Weightable
 
     public function getWeight()
     {
-        return $this->weight;
+        return $this->weight . '-' . $this->name;
     }
 }
