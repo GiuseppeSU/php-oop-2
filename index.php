@@ -1,5 +1,7 @@
 <?php
 require_once __DIR__ . '/Model/prodotti.php';
+require_once __DIR__ . '/Model/Animali.php';
+
 
 $cibi = [
     new Cibo('Cane', 'https://www.modacani.it/prodotti/big/2592.jpg', 12.00, 'Croccantini per Cani', 'Croccantini', 2.00),
@@ -16,6 +18,11 @@ $cucce = [
     new Gioco('Cane', 'https://shop-cdn-m.mediazs.com/bilder/cuccia/per/cani/jackson/0/400/icon_topseller_1_85__0.jpg', 50.00, 'Cuccia per Cani', 'Cuccia', 20.00),
     new Gioco('Gatto', 'https://www.caniegattipetshop.it/13536-large_default/cuccia-mod-gatto.jpg', 15.00, 'Cuccia per Gatti', 'Cuccia', 3.00)
 ];
+
+
+$wheigth = new Animal();
+$wheigth->setWeight(20 . 'Kg');
+echo $wheigth->getWeight();
 
 ?>
 <!DOCTYPE html>

@@ -1,6 +1,9 @@
 <?php
+
+require_once __DIR__ . '/../Traits/Weightable.php';
 class Prodotto
 {
+
 
     public $categoria;
     public $image;
@@ -22,6 +25,7 @@ class Prodotto
 
 class Cuccia extends Prodotto
 {
+
     public $altezza;
     public $lunghezza;
 
